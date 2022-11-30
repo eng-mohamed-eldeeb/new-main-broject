@@ -6,7 +6,7 @@ export default function Home() {
   let isLoggedIn;
   useEffect(()=>{
     isLoggedIn = localStorage.getItem('isLoggedIn')
-    !isLoggedIn && rout.push('./login')
+    !isLoggedIn && rout.push('./signup')
   },[])
   return (
     <div className="bg-green-500">
